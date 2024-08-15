@@ -10,6 +10,25 @@ import { MessageService } from '../services/message.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  perfil = {
+    foto:`https://cdn2.iconfinder.com/data/icons/social-flat-buttons-3/512/anonymous-512.png`  ,
+    nome: ' Miguel do grau ',
+    insta: '@mimi244',
+    formado: ' art 244',
+    cidade: ' Tatui/ sp',
+    biofrase: ' e os 4mm  ',
 
-  constructor(){ }
+    bio: [
+      'Programador com mais de 5 anos de java, Java é vida   ',
+      ' pega fi '
+
+
+    ]
+
+
+
+
+  }
+
+  constructor() { }
 }

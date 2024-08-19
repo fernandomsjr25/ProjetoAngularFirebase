@@ -20,7 +20,7 @@ export class HomePage {
 
     bio: [
       'Programador com mais de 5 anos de java, Java é vida   ',
-      ' pega fi '
+      
 
 
     ]

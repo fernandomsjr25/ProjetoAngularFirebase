@@ -39,7 +39,7 @@ amigosp= [
   },
   {
     nome: ' Mama',
-    foto:`https://cdn2.iconfinder.com/data/icons/social-flat-buttons-3/512/anonymous-512.png` ,
+    foto:`https://cdn0.iconfinder.com/data/icons/user-pictures/100/maturewoman-3-256.png` ,
     bio: ' slv sllv  '
   },
   {

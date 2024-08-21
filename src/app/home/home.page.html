@@ -1,7 +1,7 @@
 <ion-content [fullscreen]="true">
   <ion-row>
-    <ion-col size="4" class="ion-center">
-      <img class="perfilFoto" src="{{this.perfil.foto}}" alt="">
+    <ion-col size="4"   >
+      <img class="perfilFoto" src="{{this.perfil.foto}}" alt=""   >
     </ion-col>
     <ion-col>
       <h1> {{this.perfil.nome}} </h1>
@@ -52,8 +52,8 @@
     <!-- amigos -->
 
     <ion-col>
-      <ion-item>
-        <h1>45k</h1>
+      <ion-item  >
+        <h1  >45k</h1>
       </ion-item>
       <ion-item>
         <img class="icones" src="https://cdn2.iconfinder.com/data/icons/squircle-ui/32/Group-256.png" alt="">
@@ -70,12 +70,12 @@
 
   <ion-row>
     <ng-container *ngFor="let amigos of amigosp">
-      <ion-col size="4">
+      <ion-col size="2">
         <img  class="perfilFotoa" src="{{amigos.foto}} " alt="  ">
       </ion-col>
 
 
-      <ion-col size="8">
+      <ion-col size="10">
         <ion-item >
           <h2> {{amigos.nome}} </h2>
         </ion-item>

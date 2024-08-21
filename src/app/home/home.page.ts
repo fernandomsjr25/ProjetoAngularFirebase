@@ -33,19 +33,19 @@ export class HomePage {
 
 amigosp= [
   {
-    nome: ' fer',
+    nome: ' Fefe',
     foto:`https://cdn2.iconfinder.com/data/icons/social-flat-buttons-3/512/anonymous-512.png`,
-    bio: 'nois e foda  '
+    bio: 'Nois e foda  '
   },
   {
-    nome: ' mama',
+    nome: ' Mama',
     foto:`https://cdn2.iconfinder.com/data/icons/social-flat-buttons-3/512/anonymous-512.png` ,
-    bio: ' bixa boa pra *****  '
+    bio: ' slv sllv  '
   },
   {
-    nome: ' vivi',
-    foto:`https://cdn2.iconfinder.com/data/icons/social-flat-buttons-3/512/anonymous-512.png` ,
-    bio: ' é *****  '
+    nome: ' Vivi',
+    foto:`https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/afro_woman_female_person-256.png` ,
+    bio: ' é 171 '
   },
 
 

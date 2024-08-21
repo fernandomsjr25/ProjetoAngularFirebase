@@ -68,7 +68,24 @@
     </ion-col>
   </ion-row>
 
-ion-row 
+  <ion-row>
+    <ng-container *ngFor="let amigos of amigosp">
+      <ion-col size="4">
+        <img  class="perfilFotoa" src="{{amigos.foto}} " alt="  ">
+      </ion-col>
+
+
+      <ion-col size="8">
+        <ion-item >
+          <h2> {{amigos.nome}} </h2>
+        </ion-item>
+        <h3> {{amigos.bio }} </h3>
+      </ion-col>
+
+    </ng-container>
+  </ion-row>
+
+
 
 
 

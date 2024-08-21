@@ -30,5 +30,26 @@ export class HomePage {
 
   }
 
+
+amigosp= [
+  {
+    nome: ' fer',
+    foto:`https://cdn2.iconfinder.com/data/icons/social-flat-buttons-3/512/anonymous-512.png`,
+    bio: 'nois e foda  '
+  },
+  {
+    nome: ' mama',
+    foto:`https://cdn2.iconfinder.com/data/icons/social-flat-buttons-3/512/anonymous-512.png` ,
+    bio: ' bixa boa pra *****  '
+  },
+  {
+    nome: ' vivi',
+    foto:`https://cdn2.iconfinder.com/data/icons/social-flat-buttons-3/512/anonymous-512.png` ,
+    bio: ' é *****  '
+  },
+
+
+]
+
   constructor() { }
 }

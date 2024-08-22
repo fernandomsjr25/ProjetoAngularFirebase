@@ -37,7 +37,7 @@
                           <div class="ion-padding" slot="content">
                               <ng-container *ngFor="let treino of rotina.treinos">
                                   <ion-item>
-                                      <ion-label>{{ treino }}</ion-label>
+                                      <ion-label>{{ treino.nome }}</ion-label>
                                   </ion-item>
                               </ng-container>
                           </div>
@@ -66,6 +66,9 @@
                     <img alt="" src="{{treino.foto}}  " />
                   </ion-thumbnail>
                   <ion-label> {{treino.nome}} </ion-label>
+                  <ion-label> {{treino.series}}  series </ion-label>
+
+               
                 </ion-item>
               </ng-container>     
              </ion-list>

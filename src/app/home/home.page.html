@@ -51,8 +51,37 @@
 
   <!-- VISUALIZAÇÃO TREINOS -->
   <ion-row class="ion-justify-content-center" *ngIf="this.segment == 'treinos'">
-      <ion-col size="12" size-lg="5">Treinos</ion-col>
+       <ion-col size="12" size-lg="5">
+         
+         <ion-card>
+           <ion-card-header>
+             <ion-card-title>Treinos</ion-card-title>
+             <ion-card-subtitle>Fotos do treino</ion-card-subtitle>
+           </ion-card-header>
+           <ion-card-content>
+             <ion-list>    
+              <ng-container *ngFor="let treino of this.treinos">
+                <ion-item lines="none">
+                  <ion-thumbnail slot="start">
+                    <img alt="" src="{{treino.foto}}  " />
+                  </ion-thumbnail>
+                  <ion-label> {{treino.nome}} </ion-label>
+                </ion-item>
+              </ng-container>     
+             </ion-list>
+           </ion-card-content>
+         </ion-card>
+
+        
+       </ion-col> 
+
+
+
+
    </ion-row>
+
+
+
 
 
 

@@ -10,25 +10,60 @@ import { MessageService } from '../services/message.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  perfil = {
-    foto:`https://cdn2.iconfinder.com/data/icons/social-flat-buttons-3/512/anonymous-512.png`  ,
-    nome: ' Miguel do grau ',
-    insta: '@mimi244',
-    formado: ' art 244',
-    cidade: ' Tatui/ sp',
-    biofrase: ' e os 4mm  ',
 
-    bio: [
-      'Programador com mais de 5 anos de java, Java é vida   ',
-      ' pega fi '
+  segment: string = 'usuarios';
 
+  usuarios = [
+    {
+      foto: '',
+      nome: 'Dolores Fuertes de Barriga',
+      idade: 20,
+      genero: 'Feminino',
+      rotinas: [
+        { dia: 'segunda-feira',  treinos: [ 'Supino Fresco', 'Rosca Estreita', 'Mesa Esticadora'] },
+        { dia: 'quarta-feira',  treinos: [ 'Crucifixo Henri', 'Trícips Corda', 'Remada Costelinha'] },
+        { dia: 'sexta-feira',  treinos: [ 'Tríceps do Hulk', 'Good Morning Papai', 'Agachamento Sumô' ] },
+        
+      ]
+    },
+    {
+      foto: '',
+      nome: 'Marciano Verdinho Silva',
+      idade: 30,
+      genero: 'Masculino',
+      rotinas: [
+        {
+          dia: 'terça-feira', 
+          treinos: [
+            'Supino',
+            'Rosca Direta',
+            'Mesa Flexora'
+          ]
+        },
+        {
+          dia: 'quinta-feira', 
+          treinos: [
+            'Crucifixo',
+            'Supino Fechado',
+            'Tríceps Coice'
+          ]
+        },
+        {
+          dia: 'sábado-feira', 
+          treinos: [
+            'Tríceps Corda',
+            'Tríceps Francesa',
+            'Pulley'
+          ]
+        }
+      ]
+    }
+  ]
+  
+  constructor(){}
 
-    ]
-
-
-
-
+  trocar(event: any){
+    this.segment = event.detail.value;
   }
 
-  constructor() { }
 }

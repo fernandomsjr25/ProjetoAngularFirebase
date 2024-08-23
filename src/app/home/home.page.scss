@@ -1,0 +1,20 @@
+.mouse-hover{
+
+    & h2{
+        transition: all 1s;
+        color: blue;
+    }
+
+}
+
+.mouse-hover:hover{
+    cursor: pointer;
+    & h2{
+        letter-spacing: 5px;
+        color:red;
+        transition: all 0.5s;
+
+    }
+
+   
+}

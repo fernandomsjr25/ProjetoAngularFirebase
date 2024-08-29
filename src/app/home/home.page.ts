@@ -3,6 +3,7 @@ import { AuthenticateService } from '../services/auth.service';
 import { CrudService } from '../services/crud.service';
 import { Storage, getDownloadURL, ref, uploadBytesResumable } from '@angular/fire/storage';
 import { MessageService } from '../services/message.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -17,8 +18,12 @@ paises: any;
 
 
 
-  constructor() {
+  constructor(
+private router : Router
+
+  ) {
     this.getPaisCode();
+
   }
 
 
@@ -44,6 +49,13 @@ paises: any;
 
         console.log('processo finalizado!')
       })
+
+  }
+
+  verDetalhes(ccn3:string){
+    this.router.navigate(['/ver-detalhes'],{
+      state: { codigo: ccn3 }
+    });
 
   }
 

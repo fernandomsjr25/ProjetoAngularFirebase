@@ -7,7 +7,7 @@
       <ion-row class="ion-justify-content-center">
         <ng-container *ngFor="let pais of this.paises">
           <ion-col size="12" size-lg="4">
-            <ion-item lines="none"  class="mouse-hover">
+            <ion-item lines="none"  class="mouse-hover" (click)="verDetalhes(pais.ccn3)">
               <ion-thumbnail slot="start">
                 <img src="{{pais.flags.png}}" alt="">
               </ion-thumbnail>

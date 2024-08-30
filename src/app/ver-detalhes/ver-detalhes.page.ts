@@ -10,6 +10,7 @@ export class VerDetalhesPage  {
 
 
 pais:any;
+tempo:any;
 
   constructor() {
     console.log(history.state.codigo)

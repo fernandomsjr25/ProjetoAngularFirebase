@@ -2,15 +2,27 @@
 <ng-container *ngFor="let pais of this.pais" >
 
   <ion-row>
-    <ion-col>
+    <ion-col size="4">
       <ion-card>
         <img alt="" src="{{pais.flags.png}}" />
         <ion-card-header>
           <ion-card-title>{{pais.cca2}}</ion-card-title>
           <ion-card-subtitle>{{pais.capital}}</ion-card-subtitle>
-          <ion-card-subtitle>{{pais.languages.por}}</ion-card-subtitle>
-          <ion-card-subtitle>{{pais.languages}}</ion-card-subtitle>
-          <ion-card-subtitle>{{pais.languages}}</ion-card-subtitle>
+          <ion-card-subtitle>{{pais.population}}</ion-card-subtitle>
+          <ion-card-subtitle>{{pais.area}}  </ion-card-subtitle>
+          <ion-card-subtitle> {{pais.region}}   </ion-card-subtitle>
+          <ion-card-subtitle> {{pais.subregion}}   </ion-card-subtitle>
+          <ion-card-subtitle> 
+            <ion-item>
+            <ion-label>fuso horario do pais </ion-label>
+            <ng-container *ngFor=" "  >
+              <ion-card-subtitle> {{}}   </ion-card-subtitle>
+            </ng-container>
+                
+            </ion-item>
+          
+          
+          </ion-card-subtitle>
 
 
 

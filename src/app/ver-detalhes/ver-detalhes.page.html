@@ -2,7 +2,7 @@
 <ng-container *ngFor="let pais of this.pais" >
 
   <ion-row>
-    <ion-col size="4">
+    <ion-col size="12" lg-size="12" >
       <ion-card>
         <img alt="" src="{{pais.flags.png}}" />
         <ion-card-header>
@@ -13,16 +13,29 @@
           <ion-card-subtitle> {{pais.region}}   </ion-card-subtitle>
           <ion-card-subtitle> {{pais.subregion}}   </ion-card-subtitle>
           <ion-card-subtitle> 
-            <ion-item>
+          </ion-card-subtitle>
             <ion-label>fuso horario do pais </ion-label>
-            <ng-container *ngFor=" "  >
-              <ion-card-subtitle> {{}}   </ion-card-subtitle>
+            <ng-container *ngFor="let tempo  of pais.timezones "  >
+              <ion-item>
+              <h4>a{{tempo}}</h4>
+
+            </ion-item>
+            </ng-container>
+
+             <h1>fronteiras do pais </h1>
+
+
+
+            <ng-container *ngFor="let lado of pais.borders "  >
+              <ion-item>
+              <ion-card-subtitle > 
+                <ion-item  class="ff" (click)="verDetalhes(lado)" > {{lado}} </ion-item> 
+              </ion-card-subtitle>
+            </ion-item>
             </ng-container>
                 
-            </ion-item>
           
           
-          </ion-card-subtitle>
 
 
 

@@ -19,4 +19,4 @@ import { RouterLink } from '@angular/router';
     FooterComponent
   ]
 })
-export class HeaderModule { }
+export class FooterModule { }

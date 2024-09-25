@@ -4,21 +4,20 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { BannerPageRoutingModule } from './banner-routing.module';
+import { GaleryPageRoutingModule } from './galery-routing.module';
 
-import { BannerPage } from './banner.page';
+import { GaleryPage } from './galery.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BannerPageRoutingModule
+    GaleryPageRoutingModule
   ],
   exports:[
-    BannerPage,
+    GaleryPage,
   ],
-  
-  declarations: [BannerPage]
+  declarations: [GaleryPage]
 })
-export class BannerPageModule {}
+export class GaleryPageModule {}

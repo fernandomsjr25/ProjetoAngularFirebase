@@ -7,6 +7,9 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { HeaderModule } from '../shared/header/header.module';
 import { FooterModule } from '../shared/footer/footer.module';
+import { BannerPage } from '../shared/banner/banner.page';
+import { BannerPageModule } from '../shared/banner/banner.module';
+import { GaleryPageModule } from '../shared/galery/galery.module';
 
 
 @NgModule({
@@ -16,7 +19,9 @@ import { FooterModule } from '../shared/footer/footer.module';
     IonicModule,
     HomePageRoutingModule,
     HeaderModule,
-    FooterModule
+    FooterModule,
+    BannerPageModule,
+    GaleryPageModule,
   ],
   declarations: [HomePage]
 })

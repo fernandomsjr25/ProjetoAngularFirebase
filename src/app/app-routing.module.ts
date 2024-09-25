@@ -10,7 +10,15 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  }
+  },
+  {
+    path: 'galery',
+    loadChildren: () => import('./shared/galery/galery.module').then( m => m.GaleryPageModule)
+  },
+  {
+    path: 'banner',
+    loadChildren: () => import('./shared/banner/banner.module').then( m => m.BannerPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,40 +1,22 @@
-
-
-<ion-row>
-    
-    <ion-col>
-        <ion-item>
-          <img  class="logo lines:none" src="https://cdn0.iconfinder.com/data/icons/sports-70/60/Mintie_-_Color_-28_-_Weight-256.png" alt="">
- 
-
-            <img class="logos" src="https://cdn0.iconfinder.com/data/icons/set-app-incredibles/24/Home-01-256.png" alt="">
-            <ion-label>
-                Inicio
-            </ion-label>
- 
-
-
-            <img class="logos" src="https://cdn0.iconfinder.com/data/icons/cryptocurrency-137/128/1_profile_user_avatar_account_person-132-256.png" alt="">
-            <ion-label>
-                sobre
-            </ion-label>
-
-
-            <img  class="logos" src="https://cdn3.iconfinder.com/data/icons/userinterface-1/100/ui-33-256.png" alt="">
-            <ion-label>
-               galeria
-            </ion-label>
-     
+<ion-header>
+    <ion-toolbar>
+      <ion-item lines="none" slot="start">      
+        <ion-thumbnail>
+          <img src="{{ this.menu.logo }}">
+        </ion-thumbnail>
+      </ion-item>
       
-            <img class="logos" src="https://cdn4.iconfinder.com/data/icons/communication-163/32/phone-256.png" alt="">
-            <ion-label>
-              contato
-            </ion-label>
+      <ng-container *ngFor="let item of this.menu.items">
+      <ion-item lines="none" slot="start" routerLink="{{ item.link }}">      
+        <ion-thumbnail slot="start" class="icone">
+          <img src="{{ item.icone }}">
+        </ion-thumbnail>
+        <ion-label>
+          {{item.texto}}
+        </ion-label>
         </ion-item>
-    </ion-col>
 
-</ion-row>
+    </ng-container>
 
-
-
-
+    </ion-toolbar>
+  </ion-header>

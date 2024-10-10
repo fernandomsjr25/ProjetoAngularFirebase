@@ -1,6 +1,23 @@
 
 
 <ion-content [fullscreen]="true">
-    <app-header></app-header>
- k k 
+  
+
+<ion-row>
+    <ion-col>
+     Nome do aluno =  {{this.aluno.nome}}
+        <ion-input label="Nome" [(ngModel)]="this.aluno.nome"> </ion-input>
+        <ion-button (click)="cadastrar()">cadastrar</ion-button>
+    </ion-col>
+</ion-row>
+
+
+<ion-row>
+    <ion-col>
+        <ng-container>
+            
+        </ng-container>
+    </ion-col>
+</ion-row>
+
 </ion-content>
